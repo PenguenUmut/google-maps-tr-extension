@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Google Maps TR Extension",
+  "version": "1.0.0",
+  "description": "Türkiye'den Google Maps uydu görüntülerindeki bulanıklığı giderir. KHMS isteklerini MT sunucularına yönlendirir.",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "host_permissions": [
+    "*://khms0.google.com/*",
+    "*://khms1.google.com/*",
+    "*://khms2.google.com/*",
+    "*://khms3.google.com/*",
+    "*://khms.google.com/*",
+    "*://khms0.google.com.tr/*",
+    "*://khms1.google.com.tr/*",
+    "*://khms2.google.com.tr/*",
+    "*://khms3.google.com.tr/*",
+    "*://maps.google.com/*",
+    "*://www.google.com/maps/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Google Maps TR",
+    "default_icon": "icons/icon.svg"
+  }
+}
